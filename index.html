@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>EARTH MEDIA</title>
+</head>
+<body>
+ <section class="showcase ">
+     <header>
+         <h2 class="logo">Earth</h2>
+         <div class="toggle "></div>
+     </header>
+     <video src="earth.mp4" muted loop autoplay></video> 
+     <div class="overlay"></div>
+     <div class="text">
+         <h2>LIVELY</h2>
+         <h3>NEVER STOP</h3>
+         <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life.
+            While large amounts of water can be found throughout the Solar System, only Earth sustains 
+            liquid surface water. About 71% of Earth's surface is made up of the ocean, dwarfing Earth's 
+            polar ice, lakes and rivers.</p>
+            <a href="#">Explore</a>
+        </div>
+            <ul class="Social">
+                <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.twitter.com/"><i class="bi bi-twitter"></i></a>
+            </ul>
+ </section>  
+ <div class="menu">
+     <ul>
+         <li><a href="#">HOME</a></li>
+         <li><a href="#">NEWS</a></li>
+         <li><a href="#">FEATURES</a></li>
+         <li><a href="#">CONTACT</a></li>
+     </ul>
+ </div> 
+ <script>
+     const menuToggle = document.querySelector('.toggle')
+     const showcase =document.querySelector('.showcase')
+     menuToggle.addEventListener('click', () => {
+         menuToggle.classList.toggle('active')
+         showcase.classList.toggle('active')
+     })
+ </script>
+</body>
+</html>
